@@ -6,29 +6,50 @@
 //  Copyright © 2019 itsjehad. All rights reserved.
 //
 
+
+
 import XCTest
+
+
 @testable import StringManipulation
 
+extension String {
+  subscript(_ i: Int) -> String {
+    let idx1 = index(startIndex, offsetBy: i)
+    let idx2 = index(idx1, offsetBy: 1)
+    return String(self[idx1..<idx2])
+  }
+
+  subscript (r: Range<Int>) -> String {
+    let start = index(startIndex, offsetBy: r.lowerBound)
+    let end = index(startIndex, offsetBy: r.upperBound)
+    return String(self[start ..< end])
+  }
+
+  subscript (r: CountableClosedRange<Int>) -> String {
+    let startIndex =  self.index(self.startIndex, offsetBy: r.lowerBound)
+    let endIndex = self.index(startIndex, offsetBy: r.upperBound - r.lowerBound)
+    return String(self[startIndex...endIndex])
+  }
+}
+
+
+
 class StringManipulationTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    let numCharacters = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
+    func phoneDigitToStringCombination(_ phoneNumber: String) -> String{
+        if phoneNumber.count > 0 {
+            let char = phoneNumber[0]
+            if let intChar = Int(char){
+                
+                //for c in numCharacters[phoneNumber[0]]
+            }
         }
+        return ""
+    }
+
+    func testPhoneDigitToStringCobmination(){
+        
     }
 
 }

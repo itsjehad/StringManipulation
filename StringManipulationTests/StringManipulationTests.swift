@@ -37,19 +37,25 @@ extension String {
 
 class StringManipulationTests: XCTestCase {
     let numCharacters = ["", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"]
-    func phoneDigitToStringCombination(_ phoneNumber: String) -> String{
+    func phoneDigitToStringCombination(_ phoneNumber: String, _ parent: String){
         if phoneNumber.count > 0 {
             let char = phoneNumber[0]
             if let intChar = Int(char){
                 
-                //for c in numCharacters[phoneNumber[0]]
+                for i in 0 ..< numCharacters[intChar].count{
+                    let newParent = parent + numCharacters[intChar][i]
+                    phoneDigitToStringCombination(phoneNumber[1 ..< phoneNumber.count], newParent)
+                    
+                }
             }
         }
-        return ""
+        else{
+            print(parent)
+        }
     }
 
     func testPhoneDigitToStringCobmination(){
-        
+        phoneDigitToStringCombination("234", "")
     }
 
 }

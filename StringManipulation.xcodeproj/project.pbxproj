@@ -15,7 +15,7 @@
 		A5DADE002361020F005C369D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5DADDFE2361020F005C369D /* LaunchScreen.storyboard */; };
 		A5DADE0B23610210005C369D /* StringManipulationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE0A23610210005C369D /* StringManipulationTests.swift */; };
 		A5DADE1623610210005C369D /* StringManipulationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DADE1523610210005C369D /* StringManipulationUITests.swift */; };
-		F0AF4B9823686ED4009873A3 /* NotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF4B9723686ED4009873A3 /* NotificationCenterTests.swift */; };
+		F0AF4B9823686ED4009873A3 /* CustomNotificationCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AF4B9723686ED4009873A3 /* CustomNotificationCenterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		A5DADE1123610210005C369D /* StringManipulationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StringManipulationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5DADE1523610210005C369D /* StringManipulationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringManipulationUITests.swift; sourceTree = "<group>"; };
 		A5DADE1723610210005C369D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F0AF4B9723686ED4009873A3 /* NotificationCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCenterTests.swift; sourceTree = "<group>"; };
+		F0AF4B9723686ED4009873A3 /* CustomNotificationCenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNotificationCenterTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +117,7 @@
 			children = (
 				A5DADE0A23610210005C369D /* StringManipulationTests.swift */,
 				A5DADE0C23610210005C369D /* Info.plist */,
-				F0AF4B9723686ED4009873A3 /* NotificationCenterTests.swift */,
+				F0AF4B9723686ED4009873A3 /* CustomNotificationCenterTests.swift */,
 			);
 			path = StringManipulationTests;
 			sourceTree = "<group>";
@@ -273,7 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DADE0B23610210005C369D /* StringManipulationTests.swift in Sources */,
-				F0AF4B9823686ED4009873A3 /* NotificationCenterTests.swift in Sources */,
+				F0AF4B9823686ED4009873A3 /* CustomNotificationCenterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
